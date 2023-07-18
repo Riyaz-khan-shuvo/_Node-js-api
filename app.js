@@ -1,6 +1,6 @@
 /**
  * NODEJS API
- * DATABASE MONGO
+ * DATABASE MONGODB
  */
 const express = require("express");
 const mongoose = require('mongoose');
