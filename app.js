@@ -1,9 +1,6 @@
 /**
  * NODEJS API
- * DATABASE MONGODB
- * VERSION 1.0.0
- * POWERED BY SOFTLAB IT
- * DEVELOP BY MD IQBAL HOSSEN
+ * DATABASE MONGO
  */
 const express = require("express");
 const mongoose = require('mongoose');
