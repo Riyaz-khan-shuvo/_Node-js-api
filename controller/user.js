@@ -26,7 +26,7 @@ exports.userRegistration = async (req, res, next) => {
     const bodyData = req.body;
 
     const password = bodyData.password;
-    const hashedPass = bcrypt.hashSync(password, 8);
+    const hashedPass = bcrypt.hashSync(password, 6);
 
     // delete bodyData.password;
     const registrationData = {...bodyData, ...{password: hashedPass}}
