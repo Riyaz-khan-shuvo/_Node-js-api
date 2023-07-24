@@ -3,7 +3,7 @@ const cors = require('cors');
 let whitelist;
 
 if (process.env.PRODUCTION_BUILD === 'true') {
-    whitelist = ['https://esquireelectronicsltd.com', 'https://www.esquireelectronicsltd.com', 'http://localhost:4200'];
+    whitelist = [ 'http://localhost:4200','http://localhost:3000'];
 } else {
     whitelist = ['http://localhost:4200'];
 }

@@ -133,7 +133,7 @@ exports.adminLogin = async (req, res, next) => {
 }
 
 exports.getLoginAdminInfo = async (req, res, next) => {
-
+    
     try {
         // User Shop ID from check-user-auth token..
         const loginUserId = req.adminData.userId;
