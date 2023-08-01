@@ -1,0 +1,14 @@
+[
+	{
+		"_id": {
+			"$oid": "64bfd201ce895d5ed408635e"
+		},
+		"username": "Maaher01",
+		"password": "$2a$08$DuNjS6lvYN3m8eRZc6GIR.J9yOhZxpAQRteqdzWbvtjcAsK13O4YC",
+		"name": "Syed Maaher Hossain",
+		"phoneNo": "01714101359",
+		"role": "Super-Admin",
+		"hasAccess": true,
+		"__v": 0
+	}
+]

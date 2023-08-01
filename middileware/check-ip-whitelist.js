@@ -1,29 +1,26 @@
-const cors = require('cors');
+const cors = require("cors");
 
-let whitelist;
+// let whitelist;
 
-if (process.env.PRODUCTION_BUILD === 'true') {
-    whitelist = [ 'http://localhost:4200','http://localhost:3000'];
-} else {
-    whitelist = ['http://localhost:4200'];
-}
+// if (process.env.PRODUCTION_BUILD === 'true') {
+//     whitelist = [ 'http://localhost:4200','http://localhost:3000'];
+// } else {
+//     whitelist = ['http://localhost:4200'];
+// }
+
+const whitelist = ["http://localhost:3000"];
 
 const corsOptions = {
-    origin: function (origin, callback) {
-        if (whitelist.indexOf(origin) !== -1) {
-            callback(null, true)
-        } else {
-            callback(
-                new Error('Not allowed by CORS')
-            )
-        }
-    }
-}
+	origin: function (origin, callback) {
+		if (whitelist.indexOf(origin) !== -1 || !origin) {
+			callback(null, true);
+		} else {
+			callback(new Error("Not allowed by CORS"));
+		}
+	},
+};
 
 module.exports = cors(corsOptions);
-
-
-
 
 // const cors = require('cors');
 
